@@ -273,6 +273,7 @@ section:nth-of-type(even) {
   padding: 1.5rem;
   border-radius: var(--radius);
   box-shadow: 0 4px 10px rgba(0,0,0,.05);
+}
 /* Generated form styles */
 .generated-form .form-group {
   display: flex;
