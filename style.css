@@ -261,18 +261,27 @@ section:nth-of-type(even) {
   box-shadow: 0 4px 10px rgba(0,0,0,.05);
 }
 
-/* Data & IA items */
-.data-ia .data-items {
-  display: grid;
-  gap: 1.5rem;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  margin-top: 2rem;
-}
-.data-item {
+/* Tools section */
+.tools .tool {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
   background: #fff;
   padding: 1.5rem;
   border-radius: var(--radius);
   box-shadow: 0 4px 10px rgba(0,0,0,.05);
+  margin: 1.5rem 0;
+}
+.tools .tool:nth-of-type(even) {
+  flex-direction: row-reverse;
+}
+.tools .tool img {
+  width: 64px;
+  height: 64px;
+  flex-shrink: 0;
+}
+.tools .tool-text {
+  flex: 1;
 }
 /* Generated form styles */
 .generated-form .form-group {
