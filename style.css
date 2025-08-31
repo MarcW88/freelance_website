@@ -1,10 +1,10 @@
 /* Base */
 :root {
-  --primary: #b8a1e3;
-  --primary-dark: #967bc3;
-  --secondary: #a9e5bb;
-  --light: #f8f9fa;
-  --text: #333;
+  --primary: #2563eb;     /* bleu tech */
+  --primary-dark: #1e3a8a;
+  --secondary: #38b2ac;   /* accent turquoise */
+  --light: #f7fafc;       /* fond clair */
+  --text: #1a202c;
   --gray: #777;
   --radius: 6px;
 }
