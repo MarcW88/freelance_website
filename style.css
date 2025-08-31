@@ -176,6 +176,11 @@ section:nth-of-type(even) {
 }
 
 /* Methodology */
+.process {
+  background: #1E3A8A;
+  color: #fff;
+  margin-top: 2rem;
+}
 .process .steps {
   display: flex;
   flex-wrap: wrap;
@@ -185,14 +190,42 @@ section:nth-of-type(even) {
 .step {
   flex: 1 1 250px;
   text-align: center;
-  background: var(--light);
+  background: #fff;
+  color: var(--text);
   padding: 2rem;
   border-radius: var(--radius);
 }
 .step .number {
-  font-size: 2rem;
-  color: var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  margin: 0 auto 1rem;
+  border-radius: 50%;
+  background: var(--secondary);
+  color: #fff;
+  font-size: 1.4rem;
   font-weight: 700;
+}
+.step h3 {
+  font-size: 1.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .5rem;
+  margin-top: 0;
+}
+.step-icon {
+  width: 24px;
+  height: 24px;
+}
+.process-link {
+  display: block;
+  text-align: center;
+  margin-top: 2rem;
+  color: #fff;
+  text-decoration: underline;
 }
 
 /* Footer */
