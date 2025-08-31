@@ -1,11 +1,11 @@
 /* Base */
 :root {
-  --primary: #2563eb;     /* bleu tech */
-  --primary-dark: #1e3a8a;
-  --secondary: #38b2ac;   /* accent turquoise */
-  --light: #f7fafc;       /* fond clair */
-  --text: #1a202c;
-  --section-alt: #eef2f7;
+  --primary: #0A84FF;     /* bleu profond */
+  --primary-dark: #0060D9;/* bleu profond foncé */
+  --secondary: #00C2CB;   /* accent cyan */
+  --light: #F4F8FB;       /* fond clair */
+  --text: #1C1E26;
+  --section-alt: #E9EFF5;
   --gray: #777;
   --radius: 6px;
 }
@@ -67,7 +67,7 @@ a {
 }
 .btn-light {
   background: #fff;
-  color: var(--primary);
+  color: var(--primary-dark);
 }
 
 /* Header */
@@ -97,7 +97,7 @@ a {
   margin-left: 1.5rem;
 }
 .nav a:hover {
-  color: var(--primary);
+  color: var(--primary-dark);
 }
 .nav-toggle {
   display: none;
