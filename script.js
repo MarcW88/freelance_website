@@ -31,3 +31,28 @@ if (contactForm) {
     }
   });
 }
+
+// FAQ accordion
+const accordionItems = document.querySelectorAll('.accordion-item');
+accordionItems.forEach(item => {
+  const title = item.querySelector('.accordion-title');
+  const content = item.querySelector('.accordion-content');
+
+  title.addEventListener('click', () => {
+    const isExpanded = title.getAttribute('aria-expanded') === 'true';
+
+    accordionItems.forEach(i => {
+      const t = i.querySelector('.accordion-title');
+      const c = i.querySelector('.accordion-content');
+      t.setAttribute('aria-expanded', 'false');
+      c.setAttribute('aria-hidden', 'true');
+      i.classList.remove('active');
+    });
+
+    if (!isExpanded) {
+      title.setAttribute('aria-expanded', 'true');
+      content.setAttribute('aria-hidden', 'false');
+      item.classList.add('active');
+    }
+  });
+});
