@@ -203,9 +203,24 @@ section:nth-of-type(even) {
   padding: 1.5rem 0;
   font-size: .9rem;
 }
+.footer .container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+.footer-col {
+  text-align: left;
+}
+.footer-logo {
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
 
 /* Responsive */
 @media (max-width: 768px) {
+  .footer .container {
+    grid-template-columns: 1fr;
+  }
   .nav ul {
     position: absolute;
     top: 60px;
