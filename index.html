@@ -71,29 +71,34 @@
       <h2 class="section-title">Mes services de consultant SEO</h2>
       <div class="cards">
         <article class="card">
-          <img src="images/audit.svg" alt="Audit SEO" />
+          <img src="images/generated/audit.svg" alt="Audit SEO" />
           <h3>Audit SEO</h3>
           <p>Analyse technique, sémantique et concurrentielle pour identifier vos points forts et vos opportunités d’amélioration.</p>
         </article>
         <article class="card">
-          <img src="images/tech.svg" alt="Optimisation technique" />
+          <img src="images/generated/optimisation.svg" alt="Optimisation technique" />
           <h3>Optimisation technique</h3>
           <p>Amélioration de la structure, de l’indexation, de la vitesse de chargement et de l’expérience utilisateur.</p>
         </article>
         <article class="card">
-          <img src="images/contenu.svg" alt="Contenu optimisé" />
+          <img src="images/generated/contenu.svg" alt="Contenu optimisé" />
           <h3>Contenu optimisé</h3>
           <p>Création et optimisation de contenus pertinents, pensés pour répondre aux intentions de recherche de vos prospects.</p>
         </article>
         <article class="card">
-          <img src="images/netlinking.svg" alt="Netlinking" />
+          <img src="images/generated/netlinking.svg" alt="Netlinking" />
           <h3>Netlinking</h3>
           <p>Développement d’un profil de liens naturel et qualitatif pour renforcer l’autorité de votre domaine.</p>
         </article>
         <article class="card">
-          <img src="images/local.svg" alt="Référencement local" />
+          <img src="images/generated/local.svg" alt="Référencement local" />
           <h3>Référencement local</h3>
           <p>Optimisation de votre présence sur Google Maps et dans les résultats géolocalisés pour attirer une clientèle de proximité.</p>
+        </article>
+        <article class="card">
+          <img src="images/generated/automatisation-reporting.svg" alt="Automatisation et reporting" />
+          <h3>Automatisation &amp; reporting</h3>
+          <p>Mise en place d’outils et de tableaux de bord pour suivre et automatiser vos actions SEO.</p>
         </article>
       </div>
     </div>
@@ -174,10 +179,20 @@
     <div class="container">
       <h2 class="section-title">Contact</h2>
       <p>Envie d’échanger sur votre projet SEO ?</p>
-      <form class="contact-form">
-        <input type="text" name="name" placeholder="Nom" required />
-        <input type="email" name="email" placeholder="Email" required />
-        <textarea name="message" placeholder="Message" rows="5" required></textarea>
+      <!-- Formulaire généré depuis forms/contact_form.json -->
+      <form id="contact-form" action="/api/contact" method="POST" class="generated-form contact-form">
+        <div class="form-group">
+          <label for="name">Nom</label>
+          <input id="name" type="text" name="name" placeholder="Votre nom" class="form-input" required/>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input id="email" type="email" name="email" placeholder="Votre email" class="form-input" required/>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Votre message" class="form-textarea" required></textarea>
+        </div>
         <button type="submit" class="btn">Envoyer</button>
       </form>
     </div>
