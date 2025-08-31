@@ -4,6 +4,7 @@
   --primary-dark: #967bc3;
   --secondary: #a9e5bb;
   --light: #f8f9fa;
+  --section-alt: #eef2f7;
   --text: #333;
   --gray: #777;
   --radius: 6px;
@@ -118,6 +119,11 @@ a {
 /* Sections */
 .section {
   padding: 4rem 0;
+  margin: 0;
+}
+
+section:nth-of-type(even) {
+  background: var(--section-alt);
 }
 .section-title {
   text-align: center;
