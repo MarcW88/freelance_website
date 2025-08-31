@@ -221,3 +221,19 @@ a {
   max-width: 800px;
   margin: 0 auto;
 }
+
+/* FAQ */
+.faq details {
+  background: #fff;
+  margin-bottom: 1rem;
+  padding: 1rem 1.2rem;
+  border-radius: var(--radius);
+  box-shadow: 0 2px 4px rgba(0,0,0,.05);
+}
+.faq summary {
+  cursor: pointer;
+  font-weight: 500;
+}
+.faq p {
+  margin-top: .5rem;
+}
