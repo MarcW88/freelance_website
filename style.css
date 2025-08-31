@@ -325,15 +325,46 @@ section:nth-of-type(even) {
 }
 
 /* FAQ */
-.faq details {
+.faq .accordion-item {
   max-width: 800px;
   margin: 0 auto 1rem;
   background: #fff;
-  padding: 1rem 1.5rem;
+  border: 1px solid var(--primary);
   border-radius: var(--radius);
-  box-shadow: 0 4px 10px rgba(0,0,0,.05);
+  overflow: hidden;
+  transition: border-color .3s;
 }
-.faq summary {
+
+.accordion-title {
+  width: 100%;
+  background: none;
+  border: none;
+  text-align: left;
+  padding: 1rem 1.5rem;
   font-weight: 500;
   cursor: pointer;
+  position: relative;
+}
+
+.accordion-title::after {
+  content: '+';
+  position: absolute;
+  right: 1.5rem;
+  transition: transform .3s;
+}
+
+.accordion-title[aria-expanded="true"]::after {
+  content: '-';
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height .3s ease;
+  padding: 0 1.5rem;
+}
+
+.accordion-item.active .accordion-content {
+  max-height: 500px;
+  padding-bottom: 1rem;
 }
