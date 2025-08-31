@@ -221,3 +221,15 @@ a {
   max-width: 800px;
   margin: 0 auto;
 }
+
+/* Tools section */
+#tools ul {
+  list-style: disc;
+  padding-left: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+#tools li {
+  margin-bottom: 0.5rem;
+}
