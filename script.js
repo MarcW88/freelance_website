@@ -8,9 +8,13 @@ navToggle.addEventListener('click', () => {
 
 // Contact form handler
 const contactForm = document.querySelector('#contact-form');
+const formStatus = document.querySelector('.form-status');
 if (contactForm) {
   contactForm.addEventListener('submit', async (e) => {
     e.preventDefault();
+
+    formStatus.textContent = '';
+    formStatus.classList.remove('success', 'error');
 
     const formData = new FormData(contactForm);
     try {
@@ -23,11 +27,13 @@ if (contactForm) {
         throw new Error('Erreur réseau');
       }
 
-      alert('Message envoyé !');
+      formStatus.textContent = 'Message envoyé !';
+      formStatus.classList.add('success');
       contactForm.reset();
     } catch (err) {
       console.error(err);
-      alert("Une erreur est survenue lors de l'envoi du message.");
+      formStatus.textContent = "Une erreur est survenue lors de l'envoi du message.";
+      formStatus.classList.add('error');
     }
   });
 }
