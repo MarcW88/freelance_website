@@ -1,8 +1,8 @@
 /* Base */
 :root {
-  --primary: #b8a1e3;
-  --primary-dark: #967bc3;
-  --secondary: #a9e5bb;
+  --primary: #8ab6f9;
+  --primary-dark: #6d92d1;
+  --secondary: #d4e1fa;
   --light: #f8f9fa;
   --text: #333;
   --gray: #777;
@@ -52,6 +52,10 @@ a {
 .btn-light {
   background: #fff;
   color: var(--primary);
+}
+.btn-light:hover {
+  background: var(--primary-dark);
+  color: #fff;
 }
 
 /* Header */
