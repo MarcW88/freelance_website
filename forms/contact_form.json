@@ -1,0 +1,34 @@
+{
+  "action": "/api/contact",
+  "method": "POST",
+  "styles": {
+    "form_class": "generated-form contact-form",
+    "group_class": "form-group",
+    "input_class": "form-input",
+    "textarea_class": "form-textarea",
+    "button_class": "btn"
+  },
+  "fields": [
+    {
+      "type": "text",
+      "name": "name",
+      "label": "Nom",
+      "placeholder": "Votre nom",
+      "required": true
+    },
+    {
+      "type": "email",
+      "name": "email",
+      "label": "Email",
+      "placeholder": "Votre email",
+      "required": true
+    },
+    {
+      "type": "textarea",
+      "name": "message",
+      "label": "Message",
+      "placeholder": "Votre message",
+      "required": true
+    }
+  ]
+}

@@ -214,6 +214,25 @@ a {
   cursor: pointer;
 }
 
+/* Generated form styles */
+.generated-form .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.generated-form .form-input,
+.generated-form .form-textarea {
+  padding: 0.8rem;
+  border: 1px solid var(--primary);
+  border-radius: var(--radius);
+  font-family: inherit;
+}
+
+.generated-form .form-textarea {
+  min-height: 120px;
+}
+
 /* Why section */
 .why-list {
   list-style: disc;

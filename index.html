@@ -172,10 +172,20 @@
     <div class="container">
       <h2 class="section-title">Contact</h2>
       <p>Envie d’échanger sur votre projet SEO ?</p>
-      <form class="contact-form">
-        <input type="text" name="name" placeholder="Nom" required />
-        <input type="email" name="email" placeholder="Email" required />
-        <textarea name="message" placeholder="Message" rows="5" required></textarea>
+      <!-- Formulaire généré depuis forms/contact_form.json -->
+      <form id="contact-form" action="/api/contact" method="POST" class="generated-form contact-form">
+        <div class="form-group">
+          <label for="name">Nom</label>
+          <input id="name" type="text" name="name" placeholder="Votre nom" class="form-input" required/>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input id="email" type="email" name="email" placeholder="Votre email" class="form-input" required/>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Votre message" class="form-textarea" required></textarea>
+        </div>
         <button type="submit" class="btn">Envoyer</button>
       </form>
     </div>
