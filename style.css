@@ -111,7 +111,19 @@ a {
 .hero {
   background: linear-gradient(135deg, var(--primary), var(--secondary));
   color: #fff;
-  padding: 4rem 0;
+  padding: 6rem 0;
+  position: relative;
+  overflow: hidden;
+}
+.hero::after {
+  content: "";
+  position: absolute;
+  top: -60px;
+  right: -60px;
+  width: 200px;
+  height: 200px;
+  background: rgba(255,255,255,0.2);
+  border-radius: 50%;
 }
 .hero-content {
   display: flex;
