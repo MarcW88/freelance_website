@@ -15,10 +15,18 @@
 
 body {
   margin: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Inter', sans-serif;
   color: var(--text);
   line-height: 1.6;
   background: var(--light);
+}
+
+h1, h2 {
+  font-weight: 700;
+}
+
+p {
+  font-weight: 400;
 }
 
 img {
