@@ -127,20 +127,17 @@ a {
 }
 .hero-content {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  flex-wrap: wrap;
+  text-align: center;
 }
 .hero-text {
-  flex: 1 1 400px;
-  padding-right: 2rem;
+  flex: 1 1 auto;
+  padding-right: 0;
 }
 .hero-text h1 {
   font-size: 2.5rem;
   margin-top: 0;
-}
-.hero-img {
-  flex: 1 1 300px;
-  text-align: center;
 }
 
 /* Sections */
