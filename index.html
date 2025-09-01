@@ -113,6 +113,31 @@
     </div>
   </section>
 
+  <!-- Contact -->
+  <section id="contact" class="section contact">
+    <div class="container">
+      <h2 class="section-title">Contact</h2>
+      <p>📩 Envoyer un message</p>
+      <!-- Formulaire généré depuis forms/contact_form.json -->
+      <form id="contact-form" action="/api/contact" method="POST" class="generated-form contact-form">
+        <div class="form-row">
+          <label for="name">Nom</label>
+          <input id="name" type="text" name="name" placeholder="Votre nom" class="form-input" required/>
+        </div>
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input id="email" type="email" name="email" placeholder="Votre email" class="form-input" required/>
+        </div>
+        <div class="form-row">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Votre message" class="form-textarea" required></textarea>
+        </div>
+        <button type="submit" class="btn">Envoyer</button>
+      </form>
+      <p class="form-status"></p>
+    </div>
+  </section>
+
   <!-- Tools -->
   <section id="tools" class="section tools">
     <div class="container">
@@ -191,31 +216,6 @@
       </div>
     </div>
   </section>
-  <!-- Contact -->
-  <section id="contact" class="section contact">
-    <div class="container">
-      <h2 class="section-title">Contact</h2>
-      <p>📩 Envoyer un message</p>
-      <!-- Formulaire généré depuis forms/contact_form.json -->
-      <form id="contact-form" action="/api/contact" method="POST" class="generated-form contact-form">
-        <div class="form-row">
-          <label for="name">Nom</label>
-          <input id="name" type="text" name="name" placeholder="Votre nom" class="form-input" required/>
-        </div>
-        <div class="form-row">
-          <label for="email">Email</label>
-          <input id="email" type="email" name="email" placeholder="Votre email" class="form-input" required/>
-        </div>
-        <div class="form-row">
-          <label for="message">Message</label>
-          <textarea id="message" name="message" placeholder="Votre message" class="form-textarea" required></textarea>
-        </div>
-        <button type="submit" class="btn">Envoyer</button>
-      </form>
-      <p class="form-status"></p>
-    </div>
-  </section>
-
   <!-- FAQ -->
   <section id="faq" class="section faq">
     <div class="container">
