@@ -262,6 +262,15 @@ section:nth-of-type(even) {
   align-items: center;
 }
 
+.about-text ul {
+  margin: 1rem 0;
+  padding-left: 1.2rem;
+}
+
+.about-text li {
+  margin-bottom: 0.5rem;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .footer .container {
