@@ -375,20 +375,17 @@ section:nth-of-type(even) {
   min-height: 120px;
 }
 
-/* Why section */
-.why .reasons {
+/* Clients */
+.clients .logos {
   display: grid;
-  gap: 1.5rem;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  max-width: 1000px;
-  margin: 0 auto;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  align-items: center;
+  justify-items: center;
 }
-.reason {
-  background: #fff;
-  padding: 1.5rem;
-  border-radius: var(--radius);
-  box-shadow: 0 4px 10px rgba(0,0,0,.05);
-  text-align: center;
+.clients .logos img {
+  max-width: 120px;
+  height: auto;
 }
 
 /* FAQ */
