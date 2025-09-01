@@ -291,6 +291,12 @@ section:nth-of-type(even) {
     display: inline-block;
   }
 }
+/* Contact Section */
+#contact {
+  background: var(--secondary);
+  color: #fff;
+}
+
 /* Contact Form */
 .contact-form {
   display: flex;
@@ -302,6 +308,7 @@ section:nth-of-type(even) {
   padding: 2rem;
   border-radius: var(--radius);
   box-shadow: 0 4px 10px rgba(0,0,0,.1);
+  color: var(--text);
 }
 .contact-form input,
 .contact-form textarea {
@@ -312,12 +319,14 @@ section:nth-of-type(even) {
 }
 .contact-form .btn {
   width: 100%;
-  background: var(--secondary);
+  background: var(--primary);
   border: none;
   cursor: pointer;
+  font-size: 1.1rem;
+  padding: 1rem 1.5rem;
 }
 .contact-form .btn:hover {
-  background: #2c7a7b;
+  background: var(--primary-dark);
   box-shadow: 0 8px 16px rgba(0,0,0,.15);
 }
 
