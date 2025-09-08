@@ -1,8 +1,8 @@
 /* Base */
 :root {
-  --primary: #3B82F6;     /* bleu neutre */
-  --primary-dark: #0060D9;/* bleu neutre foncé */
-  --secondary: #06B6D4;   /* accent cyan */
+  --primary: #4F46E5;     /* bleu-violet */
+  --primary-dark: #3730A3;/* bleu-violet foncé */
+  --secondary: #9333EA;   /* accent violet */
   --light: #F5F7FA;       /* fond clair */
   --text: #1A1A1A;
   --section-alt: #E5E7EB;
@@ -16,18 +16,25 @@
 
 body {
   margin: 0;
-  font-family: 'IBM Plex Sans', sans-serif;
+  font-family: 'Inter', sans-serif;
   color: var(--text);
   line-height: 1.6;
   background: var(--light);
 }
-
-h1, h2 {
+h1 {
   font-family: 'Space Grotesk', sans-serif;
+  font-size: 3rem;
   font-weight: 700;
 }
 
+h2 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
 p {
+  font-size: 1rem;
   font-weight: 400;
 }
 
