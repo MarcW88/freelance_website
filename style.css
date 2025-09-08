@@ -306,6 +306,10 @@ section:nth-of-type(even) {
   }
 }
 /* Contact Section */
+.contact {
+  padding: 4rem 0;
+}
+
 #contact {
   background: var(--secondary);
   color: #fff;
