@@ -468,3 +468,9 @@ section:nth-of-type(even) {
   max-height: 500px;
   padding-bottom: 1rem;
 }
+
+/* Call-to-action after FAQ */
+.faq-contact-cta {
+  text-align: center;
+  padding: 2rem 0;
+}
