@@ -418,12 +418,16 @@ section:nth-of-type(even) {
 /* FAQ */
 .faq .accordion-item {
   max-width: 800px;
-  margin: 0 auto 1rem;
-  background: #fff;
-  border: 1px solid var(--primary);
+  margin: 0 auto 1.5rem;
+  background: var(--light);
   border-radius: var(--radius);
   overflow: hidden;
-  transition: border-color .3s;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  transition: background .3s, box-shadow .3s;
+}
+
+.faq .accordion-item:hover {
+  background: #fff;
 }
 
 .accordion-title {
@@ -438,14 +442,19 @@ section:nth-of-type(even) {
 }
 
 .accordion-title::after {
-  content: '+';
+  content: '';
   position: absolute;
   right: 1.5rem;
+  top: 50%;
+  width: 1rem;
+  height: 1rem;
+  transform: translateY(-50%) rotate(0deg);
+  background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' fill='none' stroke='%230A84FF' stroke-width='2' viewBox='0 0 24 24'><polyline points='6 9 12 15 18 9'/></svg>") center/contain no-repeat;
   transition: transform .3s;
 }
 
 .accordion-title[aria-expanded="true"]::after {
-  content: '-';
+  transform: translateY(-50%) rotate(180deg);
 }
 
 .accordion-content {
