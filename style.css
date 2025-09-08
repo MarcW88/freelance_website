@@ -182,6 +182,31 @@ section:nth-of-type(even) {
   margin-top: auto;
 }
 
+/* Variantes de cartes sombres/gradient */
+.cards--alt {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+}
+
+.card--dark {
+  background: #1f2937;
+  color: #fff;
+}
+.card--dark:hover {
+  background: #111827;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+}
+
+.card--gradient {
+  background: linear-gradient(135deg, #1e3a8a, #3b82f6);
+  color: #fff;
+}
+.card--gradient:hover {
+  background: linear-gradient(135deg, #1e40af, #2563eb);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+}
+
 /* Methodology */
 .process {
   background: #1E3A8A;
