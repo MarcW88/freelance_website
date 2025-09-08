@@ -110,35 +110,34 @@ a {
 
 /* Hero */
 .hero {
-  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  background: linear-gradient(135deg, #3B82F6, #8B5CF6);
   color: #fff;
   padding: 6rem 0;
   position: relative;
   overflow: hidden;
 }
-.hero::after {
-  content: "";
-  position: absolute;
-  top: -60px;
-  right: -60px;
-  width: 200px;
-  height: 200px;
-  background: rgba(255,255,255,0.2);
-  border-radius: 50%;
-}
 .hero-content {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  text-align: center;
+  justify-content: space-between;
+  position: relative;
 }
 .hero-text {
-  flex: 1 1 auto;
-  padding-right: 0;
+  max-width: 600px;
 }
 .hero-text h1 {
   font-size: 2.5rem;
   margin-top: 0;
+}
+.hero-subtitle {
+  margin: 1rem 0 2rem;
+  font-size: 1.25rem;
+}
+.hero-visual {
+  position: absolute;
+  right: 5%;
+  bottom: 0;
+  width: 300px;
 }
 
 /* Sections */
