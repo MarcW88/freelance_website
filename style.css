@@ -135,7 +135,9 @@ a {
 }
 .hero-text h1 {
   font-size: 2.5rem;
+  line-height: 1.2;
   margin-top: 0;
+  margin-bottom: 0.5rem;
 }
 .hero-subtitle {
   margin: 1rem 0 2rem;
