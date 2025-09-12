@@ -118,17 +118,26 @@ a {
 
 /* Hero */
 .hero {
-  background: linear-gradient(135deg, #3B82F6, #8B5CF6);
+  background: url("images/6c6a1684-6c34-42d6-9359-10cdd421a895.png") center/cover no-repeat;
   color: #fff;
   padding: 6rem 0;
   position: relative;
   overflow: hidden;
 }
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+
 .hero-content {
   display: flex;
   align-items: center;
   justify-content: space-between;
   position: relative;
+  z-index: 1;
 }
 .hero-text {
   max-width: 600px;
