@@ -36,7 +36,7 @@ h2 {
 p {
   font-size: 1rem;
   font-weight: 400;
-  max-width: 100%;
+  max-width: 100% !important;
   margin: 1rem 0;
 }
 
