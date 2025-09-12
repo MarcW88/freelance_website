@@ -200,40 +200,24 @@ section:nth-of-type(even) {
   margin-top: auto;
 }
 
-/* Details / summary accordion */
-details {
-  background: #fff;
-  border-radius: var(--radius);
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-  margin: 1rem 0;
-}
-
-summary {
-  list-style: none;
-  cursor: pointer;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1rem;
-}
-
-summary::-webkit-details-marker {
-  display: none;
-}
-
-details p {
-  padding: 0 1rem 1rem;
-}
-
 /* FAQ */
 .faq details {
   max-width: 800px;
   margin: 0 auto 1.5rem;
+  background: #fff;
+  border-radius: var(--radius);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
 }
 
 .faq summary {
   padding: 1rem 1.5rem;
   font-weight: 500;
+  list-style: none;
+  cursor: pointer;
+}
+
+.faq summary::-webkit-details-marker {
+  display: none;
 }
 
 .faq details p {
