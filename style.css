@@ -137,9 +137,8 @@ img {
 /* Sections */
 .section {
   padding: 4rem 0;
-}
-.section:nth-of-type(even) {
-  background: #ffffff;
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
 }
 
 .cards {
@@ -147,18 +146,18 @@ img {
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 2rem;
 }
-.card {
+.cards .card {
   background: #fff;
   padding: 2rem;
   border-radius: var(--radius);
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.card:hover {
+.cards .card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
-.card img {
+.cards .card img {
   margin-bottom: 1rem;
 }
 
