@@ -16,20 +16,20 @@
 
 body {
   margin: 0;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
   color: var(--text);
   line-height: 1.6;
   background: var(--light);
 }
 h1 {
-  font-family: 'Space Grotesk', sans-serif;
-  font-size: 3rem;
+  font-family: 'Sora', sans-serif;
+  font-size: 3.5rem;
   font-weight: 700;
 }
 
 h2 {
-  font-family: 'Space Grotesk', sans-serif;
-  font-size: 2rem;
+  font-family: 'Sora', sans-serif;
+  font-size: 2.25rem;
   font-weight: 600;
 }
 
