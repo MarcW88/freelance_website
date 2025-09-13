@@ -216,6 +216,30 @@ section:nth-of-type(even) {
   margin-top: auto;
 }
 
+/* Card decorative variants */
+.card--angled {
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+}
+
+.card--overlay {
+  position: relative;
+  overflow: hidden;
+}
+.card--overlay::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(79, 70, 229, 0.1);
+  background-image: url("images/stars.svg");
+  background-size: cover;
+  mix-blend-mode: multiply;
+  pointer-events: none;
+}
+
+.card--asym {
+  border-radius: 40px 6px 40px 6px;
+}
+
 /* FAQ */
 .faq details {
   max-width: 800px;
@@ -423,8 +447,12 @@ section:nth-of-type(even) {
   .about-layout {
     grid-template-columns: 1fr;
   }
-  .services .cards {
+  .services .cards,
+  .services--alt .cards {
     grid-template-columns: 1fr;
+  }
+  .card--angled {
+    clip-path: none;
   }
   .nav ul {
     position: absolute;
