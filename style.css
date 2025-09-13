@@ -35,6 +35,10 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  text-decoration: underline;
+}
+
 img {
   max-width: 100%;
   display: block;
@@ -49,7 +53,7 @@ img {
 /* Buttons */
 .btn {
   display: inline-block;
-  background: var(--primary);
+  background: linear-gradient(90deg, #007bff, #00c2ff);
   color: #fff;
   padding: 0.75rem 1.5rem;
   border-radius: var(--radius);
