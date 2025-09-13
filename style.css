@@ -122,15 +122,22 @@ img {
 
 /* Hero */
 .hero {
-  background: linear-gradient(135deg, var(--primary), var(--primary-light));
+  display: flex;
+  align-items: center;
+  background: linear-gradient(135deg, #111, #333);
   color: #fff;
   padding: 6rem 0;
-  text-align: center;
 }
-.hero .btn {
+.hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+.btn-hero {
   background: var(--accent);
 }
-.hero .btn:hover {
+.btn-hero:hover {
   background: #c60055;
 }
 
