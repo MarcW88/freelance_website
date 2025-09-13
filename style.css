@@ -1,11 +1,13 @@
 /* Base */
 :root {
-  --primary: #4F46E5;     /* bleu-violet */
-  --primary-dark: #3730A3;/* bleu-violet foncé */
-  --secondary: #9333EA;   /* accent violet */
+  --primary: #FF6A00;     /* orange vif */
+  --primary-dark: #C65300;/* orange foncé */
+  --secondary: #FF8A3D;   /* accent orange */
+  --dark: #222222;        /* gris foncé */
+  --beige: #F5F1EB;       /* beige clair */
   --light: #F5F7FA;       /* fond clair */
   --text: #1A1A1A;
-  --section-alt: #E5E7EB;
+  --section-alt: var(--beige);
   --gray: #777;
   --radius: 6px;
 }
@@ -60,7 +62,7 @@ a {
 .btn {
   display: inline-block;
   background: linear-gradient(135deg, var(--primary), var(--secondary));
-  color: #fff;
+  color: var(--text);
   padding: 0.7rem 1.5rem;
   border-radius: 9999px;
   transition: background .3s, transform .2s ease, box-shadow .2s ease;
@@ -69,6 +71,7 @@ a {
   background: var(--primary-dark);
   transform: translateY(-4px);
   box-shadow: 0 0 10px var(--primary);
+  color: #fff;
 }
 .card {
   transition: transform .2s ease, box-shadow .2s ease;
@@ -94,7 +97,7 @@ a {
 .logo {
   font-size: 1.4rem;
   font-weight: 700;
-  color: var(--primary);
+  color: var(--primary-dark);
 }
 .nav {
   display: flex;
@@ -169,11 +172,12 @@ a {
 
 .hero-cta {
   background: linear-gradient(90deg, var(--primary) 0%, var(--secondary) 100%);
-  color: #fff;
+  color: var(--text);
 }
 
 .hero-cta:hover {
   background: linear-gradient(90deg, var(--primary-dark) 0%, var(--secondary) 100%);
+  color: #fff;
 }
 
 /* Sections */
@@ -182,6 +186,7 @@ a {
   margin: 0;
 }
 
+.section--alt,
 section:nth-of-type(even) {
   background: var(--section-alt);
 }
@@ -303,7 +308,7 @@ section:nth-of-type(even) {
   margin: 0 auto 1rem;
   border-radius: 50%;
   background: var(--secondary);
-  color: #fff;
+  color: var(--text);
   font-size: 1.4rem;
   font-weight: 700;
 }
@@ -340,7 +345,7 @@ section:nth-of-type(even) {
 
 /* Dark section theme */
 .section--dark {
-  background: #111827;
+  background: var(--dark);
   color: #fff;
 }
 
@@ -362,7 +367,7 @@ section:nth-of-type(even) {
 
 /* Footer */
 .footer {
-  background: #111827;
+  background: var(--dark);
   color: #fff;
   padding: 2rem 0;
 }
