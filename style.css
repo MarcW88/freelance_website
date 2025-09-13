@@ -247,6 +247,14 @@ section:nth-of-type(even) {
   gap: 2rem;
 }
 
+.card--highlight {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  padding: 2rem;
+  color: var(--text);
+}
+
 .card--dark {
   background: #1f2937;
   color: #fff;
@@ -327,6 +335,28 @@ section:nth-of-type(even) {
 }
 .cta h2 {
   margin: 0 0 1rem;
+}
+
+/* Dark section theme */
+.section--dark {
+  background: #111827;
+  color: #fff;
+}
+
+.section--dark a {
+  color: #fff;
+}
+
+.section--dark .section-title {
+  color: #fff;
+}
+
+.section--dark .card--highlight {
+  color: var(--text);
+}
+
+.section--dark .btn-light {
+  color: var(--primary-dark);
 }
 
 /* Footer */
