@@ -70,7 +70,7 @@ a {
 .btn:hover {
   background: var(--primary-dark);
   transform: translateY(-4px);
-  box-shadow: 0 0 10px var(--primary);
+  box-shadow: 0 0 10px rgba(255, 165, 0, 0.3);
   color: #fff;
 }
 .card {
@@ -81,9 +81,15 @@ a {
   box-shadow: 0 8px 16px rgba(0,0,0,.1);
 }
 .btn-light {
-  background: #fff;
-  color: var(--text);
+  background: var(--light);
+  color: var(--primary);
   border: 1px solid var(--primary);
+}
+.btn-light:hover {
+  background: var(--primary-dark);
+  color: #fff;
+  transform: translateY(-4px);
+  box-shadow: 0 0 10px rgba(255, 165, 0, 0.3);
 }
 
 /* Header */
