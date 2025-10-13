@@ -1,282 +1,424 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Expert SEO freelance spécialisé en data et automatisation</title>
-  <meta name="description" content="Consultant SEO indépendant, spécialisé dans l'analyse de données, l'automatisation et l'IA pour booster votre visibilité en ligne." />
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
-  <script defer src="script.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Consultant SEO orienté Data & IA – Marc Williame (Belgique)</title>
+  <meta name="description" content="Consultant SEO freelance spécialisé en data et automatisation. Audit, stratégie et reporting SEO fondés sur la donnée pour une croissance mesurable.">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- AOS Animation Library -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+  
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": ["Person", "Organization"],
+    "name": "Marc Williame",
+    "jobTitle": "Consultant SEO freelance",
+    "description": "Consultant SEO orienté Data & IA basé en Belgique",
+    "url": "https://marcwilliame.be",
+    "email": "marc@marcwilliame.be",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "BE"
+    },
+    "sameAs": [
+      "https://linkedin.com/in/marcwilliame",
+      "https://github.com/marcwilliame"
+    ],
+    "knowsAbout": ["SEO", "Data Analysis", "Marketing Automation", "Artificial Intelligence"]
+  }
+  </script>
 </head>
 <body>
-  <!-- Header / Navigation -->
-  <header class="header">
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
     <div class="container">
-      <div class="logo">Consultant<strong>SEO</strong></div>
-      <nav class="nav">
-        <ul>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#contact" class="btn btn-cta">Contact</a></li>
-          <li><a href="#about">À propos</a></li>
-          <li><a href="#tools">Outils</a></li>
-          <li><a href="#process">Méthodologie</a></li>
-          <li><a href="#clients">Clients</a></li>
-          <li><a href="#faq">FAQ</a></li>
-        </ul>
-        <button class="nav-toggle" aria-label="menu">&#9776;</button>
-      </nav>
+      <div class="nav-brand">
+        <span class="brand-text">Marc Williame ▌</span>
+      </div>
+      <div class="nav-links">
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#methodologie" class="nav-link">Méthodologie</a>
+        <a href="#about" class="nav-link">À propos</a>
+        <a href="#contact" class="btn btn-primary btn-sm">Contact</a>
+      </div>
+      <button class="nav-toggle" id="nav-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </div>
-  </header>
+  </nav>
 
-  <!-- Hero -->
-      <section class="hero">
-      <div class="container">
-        <div class="hero-content">
-          <div class="hero-text">
-            <h1>Consultant SEO freelance orienté data &amp; IA</h1>
-            <p class="hero-subtitle">Chaque site a son potentiel caché. L’analyse de données et l’automatisation permettent de le révéler et d’en faire un levier durable.</p>
-            <a href="#contact" class="btn btn-hero">Parlons de votre projet</a>
+      <!-- Hero Section -->
+      <section class="hero" id="hero">
+        <div class="hero-bg">
+          <div class="grid-pattern"></div>
+          <div class="data-flow"></div>
+        </div>
+        <div class="container">
+          <div class="hero-content">
+            <div class="hero-text" data-aos="fade-up" data-aos-duration="800">
+              <h1>Consultant SEO freelance orienté Data & IA</h1>
+              <p class="hero-subtitle">Transformez vos données en leviers de croissance durable.</p>
+              <p class="hero-description">Le référencement naturel évolue sans cesse : les algorithmes s'adaptent, les données se multiplient, et les décisions doivent être plus rapides et plus précises.<br><br>J'aide les entreprises à structurer, automatiser et comprendre leur SEO — avec une approche claire, mesurable et fondée sur la donnée.</p>
+              <div class="hero-cta">
+                <a href="#contact" class="btn btn-primary btn-glow">
+                  <i data-lucide="target"></i>
+                  Parlons de votre projet
+                </a>
+                <a href="methodologie.html" class="btn btn-link">
+                  <i data-lucide="book-open"></i>
+                  Découvrir ma méthode
+                  <i data-lucide="arrow-right"></i>
+                </a>
+              </div>
+              <p class="hero-note">💡 Basé en Belgique, j'accompagne des équipes marketing, e-commerce et B2B dans la mise en place de stratégies SEO data-driven et automatisées.</p>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-  <!-- Services -->
-  <section id="services" class="section services">
+  <!-- Intro - Pourquoi cette approche -->
+  <section class="section section--white" id="intro">
     <div class="container">
-      <h2 class="section-title">Mes services en SEO</h2>
-      <p>Le SEO, c’est d’abord une affaire de contexte. Chaque site est unique, avec son histoire, ses contraintes techniques, ses ambitions et ses utilisateurs. C’est pourquoi un expert SEO ne travaille pas avec des recettes génériques, mais avec une méthode qui s’adapte.</p>
-      <p>En tant que consultant SEO freelance, j’ai choisi une approche orientée data et IA. Pas pour remplacer l’humain, mais pour libérer du temps, fiabiliser les analyses et transformer les données en décisions claires.</p>
-      <p>Le référencement n’est pas seulement une question de mots-clés ou de backlinks : c’est un équilibre entre technique, contenu, autorité et expérience utilisateur. Mon rôle est de mettre de l’ordre dans cette complexité pour que vous puissiez vous concentrer sur ce qui compte : faire grandir votre projet.</p>
-        <div class="cards">
-          <div class="card card--highlight card--angled">
-            <img src="images/generated/audit.svg" alt="Audit SEO avancé" />
-          <h3>Audit SEO avancé</h3>
-          <p>Un audit, ce n’est pas une liste d’erreurs dans un fichier Excel. C’est une radiographie complète du site : indexation, architecture, performance, signaux techniques. L’objectif n’est pas de pointer des défauts, mais de comprendre comment le site est perçu par Google et où se trouvent les leviers concrets de progression.</p>
-          <a class="btn btn-light" href="./seo-audit.html">Découvrir</a>
+      <div class="section-header" data-aos="fade-up">
+        <h2>Pourquoi cette approche orientée Data & IA ?</h2>
+        <p class="section-subtitle">Le SEO d'aujourd'hui repose sur l'analyse et la précision.<br>Trop d'entreprises travaillent encore à l'instinct, sans mesurer l'impact réel de leurs actions.<br>Mon approche repose sur trois principes fondamentaux : mesure, rigueur et autonomie.</p>
+      </div>
+      <div class="intro-grid">
+        <div class="intro-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="intro-icon">
+            <i data-lucide="bar-chart-3"></i>
+          </div>
+          <h3>Une approche guidée par la donnée</h3>
+          <p>Chaque décision s'appuie sur des signaux mesurables : performances de recherche, logs serveur, crawl, comportement utilisateur.</p>
         </div>
-          <div class="card card--highlight card--overlay">
-            <img src="images/generated/optimisation.svg" alt="Optimisation technique et performance" />
-          <h3>Optimisation technique &amp; performance</h3>
-          <p>Un site rapide et bien structuré n’est pas seulement apprécié des moteurs de recherche : c’est aussi une meilleure expérience pour vos utilisateurs. Ici, l’approche consiste à aligner performance technique et SEO : vitesse, mobile, Core Web Vitals, structure HTML.</p>
-          <a class="btn btn-light" href="./technical-seo.html">Découvrir</a>
+        <div class="intro-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="intro-icon">
+            <i data-lucide="settings"></i>
+          </div>
+          <h3>Automatisation & rigueur</h3>
+          <p>Les outils d'IA et d'automatisation permettent de fiabiliser les analyses, gagner du temps et se concentrer sur l'essentiel.</p>
         </div>
-          <div class="card card--highlight card--asym">
-            <img src="images/generated/contenu.svg" alt="Stratégie de contenu" />
-          <h3>Stratégie de contenu &amp; analyse sémantique</h3>
-          <p>Un contenu qui fonctionne n’est pas forcément le plus long, mais celui qui répond exactement à l’intention de recherche. Grâce à l’analyse sémantique et aux données issues de vos utilisateurs, il devient possible d’identifier les sujets à fort potentiel, de hiérarchiser vos pages et de construire une vraie architecture éditoriale.</p>
-          <a class="btn btn-light" href="./content-strategy.html">Découvrir</a>
-        </div>
-          <div class="card card--highlight card--angled">
-            <img src="images/generated/netlinking.svg" alt="Netlinking et autorité" />
-          <h3>Netlinking &amp; autorité</h3>
-          <p>Les liens restent un pilier du SEO. Mais il ne s’agit pas d’en accumuler sans logique. Une bonne stratégie de netlinking, c’est créer un écosystème de confiance autour de votre site, en ciblant les bons partenariats, les bons contenus, et en renforçant la crédibilité de votre marque.</p>
-          <a class="btn btn-light" href="./link-building.html">Découvrir</a>
-        </div>
-          <div class="card card--highlight card--overlay">
-            <img src="images/generated/local.svg" alt="Référencement local" />
-          <h3>Référencement local</h3>
-          <p>Être visible dans sa zone géographique, c’est souvent plus rentable que de chercher une visibilité mondiale. Le SEO local permet de capter des prospects proches, de renforcer votre présence dans Google Maps et d’optimiser vos fiches locales.</p>
-          <a class="btn btn-light" href="./local-seo.html">Découvrir</a>
-        </div>
-          <div class="card card--highlight card--asym">
-            <img src="images/generated/automatisation-reporting.svg" alt="Automatisation et reporting SEO" />
-          <h3>Automatisation &amp; reporting SEO</h3>
-          <p>Le SEO génère une montagne de données. Sans automatisation, on finit vite noyé. Tableaux de bord, alertes, suivi d’indexation, rapports automatiques : l’idée est de vous donner une vision claire et en temps réel de vos performances.</p>
-          <a class="btn btn-light" href="./seo-automation-reporting.html">Découvrir</a>
+        <div class="intro-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="intro-icon">
+            <i data-lucide="handshake"></i>
+          </div>
+          <h3>Transparence & pédagogie</h3>
+          <p>Vous comprenez ce que vous mettez en place et pourquoi. La donnée devient un levier de décision, pas un jargon technique.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Services en mode sombre -->
-  <section id="services-plus" class="section section--dark services services--alt">
+  <!-- Services SEO -->
+  <section class="section section--gray" id="services">
     <div class="container">
-      <h2 class="section-title">Services data &amp; IA</h2>
-      <p>Le SEO moderne dépasse le simple champ du contenu. Aujourd’hui, les projets les plus performants intègrent des briques data et IA :</p>
-      <div class="cards cards--alt">
-        <div class="card card--highlight">
-          <img src="images/generated/methodologie.svg" alt="Tableaux de bord" />
-          <h3>Tableaux de bord</h3>
-          <p>Visualisation de vos données SEO pour des décisions éclairées.</p>
-          <a class="btn btn-light" href="/dashboards.html">Découvrir</a>
+      <div class="section-header" data-aos="fade-up">
+        <h2>Une approche SEO complète, de l'audit à l'automatisation</h2>
+        <h3 class="section-subtitle-h3">Des prestations conçues pour des résultats mesurables et durables</h3>
+        <p class="section-subtitle">Chaque accompagnement repose sur la même logique : analyser, structurer, exécuter et mesurer.<br>Que vous soyez une marque e-commerce, une PME ou une organisation à forte volumétrie, la méthode reste la même : des données concrètes et des actions claires.</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="service-icon">
+            <i data-lucide="search"></i>
+          </div>
+          <div class="service-badge">#Technique</div>
+          <h4>Audit SEO & Stratégie</h4>
+          <p>Radiographie complète du site (technique, contenu, données). Détection des freins, hiérarchisation des leviers et élaboration d'une roadmap claire.</p>
+          <div class="service-deliverable">
+            <strong>Livrable :</strong> plan d'action priorisé et indicateurs de suivi
+          </div>
         </div>
-        <div class="card card--highlight">
-          <img src="images/generated/automatisation-reporting.svg" alt="Automatisation IA" />
-          <h3>Automatisation IA</h3>
-          <p>Scripts et workflows pour accélérer vos analyses.</p>
-          <a class="btn btn-light" href="/automatisation-ai.html">Découvrir</a>
+        
+        <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="service-icon">
+            <i data-lucide="settings"></i>
+          </div>
+          <div class="service-badge">#Structure</div>
+          <h4>Optimisation Technique</h4>
+          <p>Améliorez la vitesse, l'architecture et la stabilité de votre site. Core Web Vitals, maillage interne, schema, logs et accessibilité sont analysés et documentés.</p>
+          <div class="service-deliverable">
+            <strong>Livrable :</strong> checklist technique + guide d'implémentation
+          </div>
         </div>
-        <div class="card card--highlight">
-          <img src="images/generated/audit.svg" alt="Stratégie data" />
-          <h3>Stratégie data</h3>
-          <p>Exploitation des données pour guider votre stratégie SEO.</p>
-          <a class="btn btn-light" href="/data-strategy.html">Découvrir</a>
+        
+        <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="service-icon">
+            <i data-lucide="compass"></i>
+          </div>
+          <div class="service-badge">#Sémantique</div>
+          <h4>Stratégie de Contenu</h4>
+          <p>Concevez des contenus qui répondent réellement aux intentions de recherche. Recherche sémantique, clustering, People Also Ask, longue traîne et maillage logique.</p>
+          <div class="service-deliverable">
+            <strong>Livrable :</strong> architecture éditoriale + briefs SEO optimisés
+          </div>
+        </div>
+        
+        <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+          <div class="service-icon">
+            <i data-lucide="bot"></i>
+          </div>
+          <div class="service-badge">#Data</div>
+          <h4>Automatisation & Reporting</h4>
+          <p>Simplifiez vos suivis grâce à des dashboards et alertes automatisées. Connectez vos données (Search Console, Analytics, CRM, etc.) pour des rapports fiables et vivants.</p>
+          <div class="service-deliverable">
+            <strong>Livrable :</strong> tableau de bord dynamique + scripts d'automatisation
+          </div>
+        </div>
+      </div>
+      <div class="section-cta" data-aos="fade-up" data-aos-delay="500">
+        <a href="#contact" class="btn btn-outline">
+          Voir les services complets
+          <i data-lucide="arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Data & IA -->
+  <section class="section section--dark" id="data-ia">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <h2>Le SEO moderne dépasse le contenu : il s'appuie sur la donnée et l'intelligence artificielle</h2>
+        <p class="section-subtitle">Les signaux se fragmentent, les SERP deviennent dynamiques, et les outils d'IA redéfinissent la manière d'analyser les performances.<br>L'enjeu n'est plus de "faire plus de contenu", mais de comprendre ce que les données révèlent.</p>
+      </div>
+      <div class="data-grid">
+        <div class="data-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="data-icon pulse">
+            <i data-lucide="trending-up"></i>
+          </div>
+          <h4>Tableaux de bord SEO</h4>
+          <p>Données centralisées et visualisées pour suivre vos indicateurs clés en temps réel.</p>
+        </div>
+        
+        <div class="data-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="data-icon pulse">
+            <i data-lucide="bot"></i>
+          </div>
+          <h4>Automatisation IA</h4>
+          <p>Analyse des requêtes, détection d'opportunités et priorisation automatisée via IA.</p>
+        </div>
+        
+        <div class="data-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="data-icon pulse">
+            <i data-lucide="database"></i>
+          </div>
+          <h4>Stratégie Data</h4>
+          <p>Croisement des signaux (SERP, CRM, GSC, Analytics) pour guider la stratégie SEO.</p>
+        </div>
+        <div class="section-note" data-aos="fade-up" data-aos-delay="400">
+          <p>💡 Chaque signal devient une information exploitable. L'objectif : transformer vos données brutes en décisions stratégiques.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Méthodologie -->
+  <section class="section section--gray" id="methodologie">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <h2>Une méthode simple, mesurable et transparente</h2>
+        <p class="section-subtitle">Chaque projet SEO suit une démarche reproductible, centrée sur la donnée et la clarté des livrables.</p>
+      </div>
+      <div class="methodology-timeline">
+        <div class="timeline-step" data-aos="fade-up" data-aos-delay="100">
+          <div class="timeline-number">1</div>
+          <div class="timeline-content">
+            <h4>Diagnostic</h4>
+            <p>Collecte, croisement et interprétation des données clés.</p>
+            <div class="timeline-example">Audit sémantique + logs + crawl.</div>
+          </div>
+        </div>
+        
+        <div class="timeline-connector" data-aos="fade-in" data-aos-delay="200"></div>
+        
+        <div class="timeline-step" data-aos="fade-up" data-aos-delay="300">
+          <div class="timeline-number">2</div>
+          <div class="timeline-content">
+            <h4>Optimisation</h4>
+            <p>Mise en œuvre priorisée des actions techniques et éditoriales.</p>
+            <div class="timeline-example">Correctifs Core Web Vitals + nouveaux contenus ciblés.</div>
+          </div>
+        </div>
+        
+        <div class="timeline-connector" data-aos="fade-in" data-aos-delay="400"></div>
+        
+        <div class="timeline-step" data-aos="fade-up" data-aos-delay="500">
+          <div class="timeline-number">3</div>
+          <div class="timeline-content">
+            <h4>Mesure continue</h4>
+            <p>Reporting automatisé et itératif.</p>
+            <div class="timeline-example">Dashboards Looker Studio + alertes IA.</div>
+          </div>
+        </div>
+      </div>
+      <div class="section-cta" data-aos="fade-up" data-aos-delay="600">
+        <a href="methodologie.html" class="btn btn-outline">
+          Voir la méthode complète
+          <i data-lucide="arrow-right"></i>
+        </a>
+      </div>
+      <div class="section-note" data-aos="fade-up" data-aos-delay="700">
+        <p>💡 L'objectif : un SEO mesurable, documenté et transmissible.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Valeurs & Engagements -->
+  <section class="section section--white" id="values">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <h2>Clarté, méthode et collaboration</h2>
+        <p class="section-subtitle">Chaque mission repose sur une vision simple : observer, comprendre, agir, et apprendre.<br>Aucune recommandation n'est livrée sans explication.<br>Chaque optimisation repose sur une logique mesurable, une documentation claire et un accompagnement humain.</p>
+      </div>
+      <div class="values-grid" data-aos="fade-up" data-aos-delay="200">
+        <div class="value-item">
+          <div class="value-icon">🧠</div>
+          <h4>Expertise Data & SEO</h4>
+          <p>Analyse technique, stratégie éditoriale et automatisation.</p>
+        </div>
+        <div class="value-item">
+          <div class="value-icon">🤝</div>
+          <h4>Collaboration claire</h4>
+          <p>Transparence, pédagogie et suivi régulier.</p>
+        </div>
+        <div class="value-item">
+          <div class="value-icon">📏</div>
+          <h4>Résultats mesurables</h4>
+          <p>Des indicateurs suivis, compris et actionnables.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- À propos -->
+  <section class="section section--gray" id="about">
+    <div class="container">
+      <div class="about-layout">
+        <div class="about-photo" data-aos="fade-right">
+          <div class="photo-frame">
+            <img src="https://via.placeholder.com/200x200/18D4B7/FFFFFF?text=MW" alt="Marc Williame consultant SEO portrait" />
+          </div>
+        </div>
+        <div class="about-content" data-aos="fade-left">
+          <h2>Une approche ancrée dans la donnée, la curiosité et l'efficacité</h2>
+          <p>Le référencement naturel n'est pas une suite de tâches isolées : c'est un système vivant, basé sur la compréhension des signaux et la précision des actions.</p>
+          <p>Cette vision structure ma manière de travailler : chaque projet devient un laboratoire d'amélioration continue.</p>
+          <p>Basé en Belgique, j'accompagne des entreprises francophones (Wallonie, Bruxelles, France) dans la mise en place de stratégies SEO autonomes et data-driven.</p>
+          <div class="about-cta">
+            <a href="methodologie.html" class="btn btn-primary">
+              <i data-lucide="compass"></i>
+              Découvrir mon approche complète
+            </a>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Contact -->
-  <section id="contact" class="section contact">
-      <h2 class="section-title">Contact</h2>
-      <!-- Formulaire généré depuis forms/contact_form.json -->
-      <form id="contact-form" action="/api/contact" method="POST" class="generated-form contact-form">
+  <section class="section section--dark" id="contact">
+    <div class="container">
+      <div class="contact-content" data-aos="fade-up">
+        <h2>Discutons de vos objectifs SEO</h2>
+        <p>Vous souhaitez clarifier votre stratégie, automatiser vos suivis ou faire évoluer votre visibilité ?<br>Décrivez votre besoin, et je vous répondrai sous 24 heures avec des pistes concrètes.</p>
+        <p class="section-subtitle">Laissez-moi un message — je vous répondrai sous 24h.</p>
+      </div>
+      <form class="contact-form" data-aos="fade-up" data-aos-delay="200">
         <div class="form-row">
-          <label for="name">Nom</label>
-          <input id="name" type="text" name="name" placeholder="Votre nom" class="form-input" required/>
+          <div class="form-group">
+            <input type="text" id="name" name="name" placeholder="Nom" required>
+          </div>
+          <div class="form-group">
+            <input type="email" id="email" name="email" placeholder="Email" required>
+          </div>
         </div>
-        <div class="form-row">
-          <label for="email">Email</label>
-          <input id="email" type="email" name="email" placeholder="Votre email" class="form-input" required/>
+        <div class="form-group">
+          <textarea id="message" name="message" rows="5" placeholder="Décrivez votre besoin SEO..." required></textarea>
         </div>
-        <div class="form-row">
-          <label for="message">Message</label>
-          <textarea id="message" name="message" placeholder="Votre message" class="form-textarea" required></textarea>
-        </div>
-        <button type="submit" class="btn">Envoyer</button>
+        <button type="submit" class="btn btn-primary btn-glow">
+          <i data-lucide="send"></i>
+          Envoyer
+        </button>
       </form>
-      <p class="form-status"></p>
-  </section>
-
-  <!-- About -->
-  <section id="about" class="section about">
-    <div class="container about-layout">
-      <div class="about-text">
-        <h2 class="section-title">À propos de moi</h2>
-        <p>Il existe deux manières d’aborder le SEO : comme une suite de tâches isolées, ou comme une stratégie continue. L’expérience montre que c’est la deuxième qui fonctionne.</p>
-        <p>Un consultant SEO freelance a la liberté d’adapter son approche à chaque client. Pas de process imposé, pas de livrables standardisés, mais un accompagnement où l’analyse et la pédagogie ont autant d’importance que les résultats chiffrés.</p>
-        <p>La conviction est simple : </p>
-        <ul class="about-points">
-          <li>Un site ne doit pas seulement attirer du trafic, mais le bon trafic,</li>
-          <li>La donnée n’a de valeur que si elle est lisible et exploitable,</li>
-          <li>le SEO est un travail collectif, où la stratégie doit pouvoir être comprise et portée en interne.</li>
-        </ul>
-        <a href="/presentation" class="btn">En savoir plus</a>
-      </div>
-      <div class="about-photo">
-        <img src="images/portrait.jpg" alt="Portrait de Marc Williame">
+        
+        <div class="contact-info" data-aos="fade-up" data-aos-delay="400">
+          <div class="contact-direct">
+            <p><i data-lucide="mail"></i> <a href="mailto:marc@marcwilliame.be">marc@marcwilliame.be</a></p>
+          </div>
+          <div class="contact-social">
+            <p>
+              <i data-lucide="link"></i>
+              <a href="https://linkedin.com/in/marcwilliame" target="_blank" rel="noopener">LinkedIn</a> • 
+              <a href="https://bsky.app/profile/marcwilliame" target="_blank" rel="noopener">Bluesky</a> • 
+              <a href="https://github.com/marcwilliame" target="_blank" rel="noopener">GitHub</a>
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Tools -->
-  <section id="tools" class="section tools">
+  <!-- FAQ Section -->
+  <section class="section section--white" id="faq">
     <div class="container">
-      <h2 class="section-title">Outils &amp; solutions que j’utilise</h2>
-      <article class="tool">
-        <img src="images/tools/search-console-ga4.svg" alt="Google Search Console et GA4" />
-        <div class="tool-text">
-          <h3>Google Search Console &amp; GA4</h3>
-          <p>Suivi de l’indexation et analyse du trafic.</p>
+      <div class="section-header" data-aos="fade-up">
+        <h2>Questions fréquentes sur le SEO orienté Data & IA</h2>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item" data-aos="fade-up" data-aos-delay="100">
+          <h4>Qu'est-ce qu'un consultant SEO orienté Data ?</h4>
+          <p>Un consultant qui base ses décisions sur des indicateurs mesurables plutôt que sur des suppositions. L'analyse de données devient un moteur stratégique, pas un simple reporting.</p>
         </div>
-      </article>
-      <article class="tool">
-        <img src="images/tools/screaming-frog.svg" alt="Screaming Frog" />
-        <div class="tool-text">
-          <h3>Screaming Frog</h3>
-          <p>Exploration technique de votre site.</p>
+        
+        <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
+          <h4>Quelle différence entre un audit SEO classique et data-driven ?</h4>
+          <p>L'audit data-driven croise plusieurs sources (logs, crawl, GSC, Analytics) pour comprendre le "pourquoi" derrière chaque performance.</p>
         </div>
-      </article>
-      <article class="tool">
-        <img src="images/tools/bigquery-sql.svg" alt="BigQuery et SQL" />
-        <div class="tool-text">
-          <h3>BigQuery &amp; SQL</h3>
-          <p>Analyses SEO avancées sur de larges volumes de données.</p>
+        
+        <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
+          <h4>Peut-on automatiser le suivi SEO ?</h4>
+          <p>Oui. Des scripts et dashboards connectés (GSC, Analytics, API) permettent de détecter automatiquement les variations de trafic ou d'indexation.</p>
         </div>
-      </article>
-      <p>Ces outils ne sont pas une fin en soi : ils servent à donner une vision claire, fiable et exploitable de votre SEO.</p>
-    </div>
-  </section>
-
-  <!-- Methodology -->
-  <section id="process" class="section section--dark process">
-    <div class="container">
-      <h2 class="section-title">Méthodologie</h2>
-      <div class="steps">
-        <div class="step">
-          <span class="number">01</span>
-          <h3><img class="step-icon" src="images/process/diagnostic.svg" alt="" />Diagnostic précis</h3>
-          <p>Évaluation complète du site et collecte des données.</p>
-        </div>
-        <div class="step">
-          <span class="number">02</span>
-          <h3><img class="step-icon" src="images/process/strategie.svg" alt="" />Stratégie &amp; optimisations</h3>
-          <p>Recommandations claires, hiérarchisées et adaptées à vos objectifs.</p>
-        </div>
-        <div class="step">
-          <span class="number">03</span>
-          <h3><img class="step-icon" src="images/process/mesure.svg" alt="" />Mesure &amp; amélioration continue</h3>
-          <p>Dashboards, suivi des indicateurs en temps réel et ajustements basés sur les données.</p>
+        
+        <div class="faq-item" data-aos="fade-up" data-aos-delay="400">
+          <h4>Travaillez-vous uniquement en Belgique ?</h4>
+          <p>Non. J'accompagne des clients en Belgique, en France et au Luxembourg, avec des stratégies adaptées à chaque marché.</p>
         </div>
       </div>
-      <a href="/methodologie" class="process-link">Voir la méthodologie complète</a>
-    </div>
-  </section>
-
-  <!-- Clients -->
-  <section id="clients" class="section clients">
-    <div class="container">
-      <h2 class="section-title">Ils me font confiance</h2>
-      <div class="logos">
-        <img src="images/clients/client1.svg" alt="Client 1" />
-        <img src="images/clients/client2.svg" alt="Client 2" />
-        <img src="images/clients/client3.svg" alt="Client 3" />
-        <img src="images/clients/client4.svg" alt="Client 4" />
-      </div>
-    </div>
-  </section>
-  <!-- FAQ -->
-  <section id="faq" class="section faq">
-    <div class="container">
-      <h2 class="section-title">FAQ – SEO, Data &amp; Automatisation</h2>
-      <div class="accordion">
-        <details>
-          <summary>Un consultant SEO travaille-t-il différemment d’un expert en data ?</summary>
-          <p>Oui. Le consultant SEO s’appuie sur les données, mais son rôle est aussi de traduire ces chiffres en actions concrètes qui font évoluer la visibilité d’un site.</p>        </details>
-        <details>
-          <summary>Le SEO est-il toujours rentable face aux campagnes payantes (SEA) ?</summary>
-          <p>Le SEO est un investissement long terme. Contrairement au SEA, il continue à générer du trafic même si vous arrêtez d’investir demain.</p>        </details>
-        <details>
-          <summary>Comment savoir si mon site a besoin d’un audit SEO ? </summary>
-          <p>Si vous ne comprenez pas pourquoi vos concurrents apparaissent avant vous, ou si vos performances stagnent, c’est souvent le premier pas.</p>        </details>
-        <details>
-          <summary>Quels résultats attendre d’un expert SEO freelance ?</summary>
-          <p>Des résultats concrets, mais surtout une transparence totale : ce qui est possible, ce qui prend du temps, et ce qui dépend de votre implication.</p>
-        </details>
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA -->
-  <section class="cta section--dark">
-    <div class="container">
-      <h2>Prêt à booster votre SEO&nbsp;?</h2>
-      <a href="#contact" class="btn btn-light">Discutons-en</a>
     </div>
   </section>
 
   <!-- Footer -->
   <footer class="footer">
     <div class="container">
-      <div class="footer-top">
-        <div class="footer-logo">Marc Williame</div>
-        <ul class="footer-nav">
-          <li><a href="#services">Services</a></li>
-          <li><a href="#about">À propos</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-      <div class="footer-social">
-        <a href="https://www.linkedin.com/in/marcwilliame" target="_blank" rel="noopener" aria-label="LinkedIn">🔗</a>
-        <a href="https://twitter.com/marcwilliame" target="_blank" rel="noopener" aria-label="Twitter">🐦</a>
-      </div>
-      <div class="footer-bottom">
-        <p>&copy; 2025 Marc Williame. Tous droits réservés.</p>
+      <div class="footer-content">
+        <p class="footer-brand">Marc Williame ▌ Consultant SEO orienté Data & IA</p>
+        <p class="footer-copyright">© 2025 — Construit avec rigueur, données et curiosité.</p>
+        <p class="footer-tagline">Inspiré par la clarté, pas les tendances.</p>
       </div>
     </div>
   </footer>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="theme-toggle.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>

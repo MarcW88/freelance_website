@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Insights SEO & Data - Marc Williame | Blog Consultant SEO</title>
+  <meta name="description" content="Explorations autour du SEO moderne : automatisation, IA, analyse sémantique et stratégies data-driven par Marc Williame.">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="blog.css">
+  
+  <!-- AOS Animation Library -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="container">
+      <div class="nav-brand">
+        <a href="index.html" class="brand-link">Marc Williame ▌</a>
+      </div>
+      <div class="nav-links">
+        <a href="index.html#services" class="nav-link">Services</a>
+        <a href="methodologie.html" class="nav-link">Méthodologie</a>
+        <a href="blog.html" class="nav-link active">Insights</a>
+        <a href="index.html#about" class="nav-link">À propos</a>
+        <a href="index.html#contact" class="btn btn-primary btn-sm">Contact</a>
+      </div>
+      <button class="nav-toggle" id="nav-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Blog Hero -->
+  <section class="blog-hero">
+    <div class="container">
+      <div class="blog-hero-content" data-aos="fade-up">
+        <h1>Insights SEO & Data</h1>
+        <p class="blog-hero-subtitle">Explorations autour du SEO moderne : automatisation, IA, analyse sémantique et data-driven strategies.</p>
+        <div class="blog-stats">
+          <div class="blog-stat">
+            <span class="stat-number">12</span>
+            <span class="stat-label">Articles</span>
+          </div>
+          <div class="blog-stat">
+            <span class="stat-number">4</span>
+            <span class="stat-label">Catégories</span>
+          </div>
+          <div class="blog-stat">
+            <span class="stat-number">2x/mois</span>
+            <span class="stat-label">Publications</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Categories Filter -->
+  <section class="section section--white">
+    <div class="container">
+      <div class="categories-filter" data-aos="fade-up">
+        <h2>Explorez par thématique</h2>
+        <div class="categories-grid">
+          <div class="category-card" data-category="seo-data">
+            <div class="category-icon">
+              <i data-lucide="bar-chart-3"></i>
+            </div>
+            <h3>SEO Data</h3>
+            <p>Analyses, métriques et insights basés sur les données</p>
+            <div class="category-count">5 articles</div>
+          </div>
+          
+          <div class="category-card" data-category="automatisation">
+            <div class="category-icon">
+              <i data-lucide="bot"></i>
+            </div>
+            <h3>Automatisation</h3>
+            <p>Scripts, workflows et outils pour optimiser le SEO</p>
+            <div class="category-count">3 articles</div>
+          </div>
+          
+          <div class="category-card" data-category="ia-analyse">
+            <div class="category-icon">
+              <i data-lucide="brain"></i>
+            </div>
+            <h3>IA & Analyse</h3>
+            <p>Intelligence artificielle appliquée au référencement</p>
+            <div class="category-count">2 articles</div>
+          </div>
+          
+          <div class="category-card" data-category="notes">
+            <div class="category-icon">
+              <i data-lucide="edit-3"></i>
+            </div>
+            <h3>Notes personnelles</h3>
+            <p>Réflexions et retours d'expérience</p>
+            <div class="category-count">2 articles</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Article -->
+  <section class="section section--gray">
+    <div class="container">
+      <div class="featured-article" data-aos="fade-up">
+        <div class="featured-badge">Article vedette</div>
+        <div class="featured-content">
+          <div class="featured-text">
+            <div class="article-meta">
+              <span class="article-category seo-data">SEO Data</span>
+              <span class="article-date">15 janvier 2025</span>
+              <span class="article-read-time">8 min de lecture</span>
+            </div>
+            <h2>Comment croiser GSC et Analytics pour détecter vos vraies opportunités SEO</h2>
+            <p class="article-excerpt">La plupart des consultants SEO analysent Search Console et Analytics séparément. Erreur. Le croisement de ces données révèle des patterns invisibles et des opportunités cachées que vos concurrents ne voient pas.</p>
+            <div class="article-highlights">
+              <div class="highlight-item">
+                <i data-lucide="target"></i>
+                <span>Méthode de clustering automatisé</span>
+              </div>
+              <div class="highlight-item">
+                <i data-lucide="trending-up"></i>
+                <span>+40% d'opportunités détectées</span>
+              </div>
+              <div class="highlight-item">
+                <i data-lucide="code"></i>
+                <span>Scripts Python inclus</span>
+              </div>
+            </div>
+            <a href="article-gsc-analytics.html" class="btn btn-primary">
+              Lire l'article complet
+              <i data-lucide="arrow-right"></i>
+            </a>
+          </div>
+          <div class="featured-visual">
+            <div class="article-preview">
+              <div class="preview-header">
+                <div class="preview-title">GSC + Analytics = Insights</div>
+              </div>
+              <div class="preview-content">
+                <div class="data-flow-viz">
+                  <div class="data-source">
+                    <i data-lucide="search"></i>
+                    <span>Search Console</span>
+                  </div>
+                  <div class="flow-arrow">→</div>
+                  <div class="data-source">
+                    <i data-lucide="bar-chart"></i>
+                    <span>Analytics</span>
+                  </div>
+                  <div class="flow-arrow">→</div>
+                  <div class="data-result">
+                    <i data-lucide="lightbulb"></i>
+                    <span>Opportunités</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Articles Grid -->
+  <section class="section section--white">
+    <div class="container">
+      <div class="articles-header" data-aos="fade-up">
+        <h2>Tous les articles</h2>
+        <div class="articles-filter">
+          <button class="filter-btn active" data-filter="all">Tous</button>
+          <button class="filter-btn" data-filter="seo-data">SEO Data</button>
+          <button class="filter-btn" data-filter="automatisation">Automatisation</button>
+          <button class="filter-btn" data-filter="ia-analyse">IA & Analyse</button>
+          <button class="filter-btn" data-filter="notes">Notes</button>
+        </div>
+      </div>
+      
+      <div class="articles-grid">
+        <!-- Article 1 -->
+        <article class="article-card" data-category="automatisation" data-aos="fade-up" data-aos-delay="100">
+          <div class="article-card-header">
+            <div class="article-meta">
+              <span class="article-category automatisation">Automatisation</span>
+              <span class="article-date">8 janvier 2025</span>
+            </div>
+          </div>
+          <div class="article-card-content">
+            <h3>Créer un dashboard SEO intelligent avec API Search Console</h3>
+            <p class="article-excerpt">Guide complet pour automatiser votre reporting SEO avec Python, l'API Search Console et Looker Studio.</p>
+            <div class="article-tags">
+              <span class="tag">Python</span>
+              <span class="tag">API</span>
+              <span class="tag">Dashboard</span>
+            </div>
+          </div>
+          <div class="article-card-footer">
+            <div class="article-stats">
+              <span><i data-lucide="clock"></i> 12 min</span>
+              <span><i data-lucide="code"></i> Tutoriel</span>
+            </div>
+            <a href="article-dashboard-api.html" class="article-link">
+              Lire →
+            </a>
+          </div>
+        </article>
+
+        <!-- Article 2 -->
+        <article class="article-card" data-category="ia-analyse" data-aos="fade-up" data-aos-delay="200">
+          <div class="article-card-header">
+            <div class="article-meta">
+              <span class="article-category ia-analyse">IA & Analyse</span>
+              <span class="article-date">2 janvier 2025</span>
+            </div>
+          </div>
+          <div class="article-card-content">
+            <h3>Ce que l'IA comprend vraiment des SERP</h3>
+            <p class="article-excerpt">Analyse des patterns que ChatGPT et Claude détectent dans les résultats de recherche, et comment les exploiter.</p>
+            <div class="article-tags">
+              <span class="tag">IA</span>
+              <span class="tag">SERP</span>
+              <span class="tag">Analyse</span>
+            </div>
+          </div>
+          <div class="article-card-footer">
+            <div class="article-stats">
+              <span><i data-lucide="clock"></i> 6 min</span>
+              <span><i data-lucide="brain"></i> Opinion</span>
+            </div>
+            <a href="article-ia-serp.html" class="article-link">
+              Lire →
+            </a>
+          </div>
+        </article>
+
+        <!-- Article 3 -->
+        <article class="article-card" data-category="notes" data-aos="fade-up" data-aos-delay="300">
+          <div class="article-card-header">
+            <div class="article-meta">
+              <span class="article-category notes">Notes personnelles</span>
+              <span class="article-date">28 décembre 2024</span>
+            </div>
+          </div>
+          <div class="article-card-content">
+            <h3>Pourquoi je documente avant de coder</h3>
+            <p class="article-excerpt">Réflexion sur l'importance de la documentation dans les projets SEO et automatisation.</p>
+            <div class="article-tags">
+              <span class="tag">Méthode</span>
+              <span class="tag">Documentation</span>
+              <span class="tag">Process</span>
+            </div>
+          </div>
+          <div class="article-card-footer">
+            <div class="article-stats">
+              <span><i data-lucide="clock"></i> 4 min</span>
+              <span><i data-lucide="heart"></i> Personnel</span>
+            </div>
+            <a href="article-documentation.html" class="article-link">
+              Lire →
+            </a>
+          </div>
+        </article>
+
+        <!-- Article 4 -->
+        <article class="article-card" data-category="seo-data" data-aos="fade-up" data-aos-delay="400">
+          <div class="article-card-header">
+            <div class="article-meta">
+              <span class="article-category seo-data">SEO Data</span>
+              <span class="article-date">20 décembre 2024</span>
+            </div>
+          </div>
+          <div class="article-card-content">
+            <h3>Analyse des logs serveur : détecter les crawls inefficaces</h3>
+            <p class="article-excerpt">Comment identifier les pages que Googlebot crawle trop souvent et optimiser votre budget crawl.</p>
+            <div class="article-tags">
+              <span class="tag">Logs</span>
+              <span class="tag">Crawl Budget</span>
+              <span class="tag">Technique</span>
+            </div>
+          </div>
+          <div class="article-card-footer">
+            <div class="article-stats">
+              <span><i data-lucide="clock"></i> 10 min</span>
+              <span><i data-lucide="search"></i> Technique</span>
+            </div>
+            <a href="article-logs-crawl.html" class="article-link">
+              Lire →
+            </a>
+          </div>
+        </article>
+
+        <!-- Article 5 -->
+        <article class="article-card" data-category="automatisation" data-aos="fade-up" data-aos-delay="500">
+          <div class="article-card-header">
+            <div class="article-meta">
+              <span class="article-category automatisation">Automatisation</span>
+              <span class="article-date">15 décembre 2024</span>
+            </div>
+          </div>
+          <div class="article-card-content">
+            <h3>Automatiser la détection de cannibalisation avec Python</h3>
+            <p class="article-excerpt">Script pour identifier automatiquement les pages qui se concurrencent sur les mêmes mots-clés.</p>
+            <div class="article-tags">
+              <span class="tag">Python</span>
+              <span class="tag">Cannibalisation</span>
+              <span class="tag">Script</span>
+            </div>
+          </div>
+          <div class="article-card-footer">
+            <div class="article-stats">
+              <span><i data-lucide="clock"></i> 8 min</span>
+              <span><i data-lucide="code"></i> Code</span>
+            </div>
+            <a href="article-cannibalisation-python.html" class="article-link">
+              Lire →
+            </a>
+          </div>
+        </article>
+
+        <!-- Article 6 -->
+        <article class="article-card" data-category="seo-data" data-aos="fade-up" data-aos-delay="600">
+          <div class="article-card-header">
+            <div class="article-meta">
+              <span class="article-category seo-data">SEO Data</span>
+              <span class="article-date">8 décembre 2024</span>
+            </div>
+          </div>
+          <div class="article-card-content">
+            <h3>Mesurer l'impact réel de vos optimisations SEO</h3>
+            <p class="article-excerpt">Méthodologie pour isoler l'effet de vos actions SEO des autres facteurs de croissance.</p>
+            <div class="article-tags">
+              <span class="tag">Mesure</span>
+              <span class="tag">ROI</span>
+              <span class="tag">Analytics</span>
+            </div>
+          </div>
+          <div class="article-card-footer">
+            <div class="article-stats">
+              <span><i data-lucide="clock"></i> 7 min</span>
+              <span><i data-lucide="trending-up"></i> Méthode</span>
+            </div>
+            <a href="article-mesure-impact.html" class="article-link">
+              Lire →
+            </a>
+          </div>
+        </article>
+      </div>
+      
+      <div class="articles-cta" data-aos="fade-up">
+        <p>Nouveau contenu publié 2 fois par mois</p>
+        <a href="#newsletter" class="btn btn-outline">
+          <i data-lucide="bell"></i>
+          S'abonner aux updates
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter Section -->
+  <section class="section section--dark" id="newsletter">
+    <div class="container">
+      <div class="newsletter-content" data-aos="fade-up">
+        <h2>Restez informé des nouveaux insights</h2>
+        <p class="newsletter-subtitle">Recevez les nouveaux articles et analyses directement par email. Pas de spam, juste du contenu SEO de qualité.</p>
+        
+        <form class="newsletter-form">
+          <div class="form-group">
+            <input type="email" placeholder="Votre adresse email" required>
+            <button type="submit" class="btn btn-primary">
+              <i data-lucide="send"></i>
+              S'abonner
+            </button>
+          </div>
+          <p class="newsletter-note">
+            <i data-lucide="shield-check"></i>
+            Pas de spam • Désabonnement en 1 clic • Données protégées
+          </p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <p class="footer-brand">Marc Williame ▌ Consultant SEO orienté Data & IA</p>
+        <p class="footer-copyright">© 2025 — Construit avec rigueur, données et curiosité.</p>
+        <div class="footer-nav">
+          <a href="index.html">Accueil</a>
+          <a href="methodologie.html">Méthodologie</a>
+          <a href="blog.html">Insights</a>
+          <a href="index.html#contact">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="script.js"></script>
+  <script src="blog.js"></script>
+</body>
+</html>

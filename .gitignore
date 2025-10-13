@@ -1,0 +1,31 @@
+# Fichiers système
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Fichiers temporaires
+*.tmp
+*.temp
+*~
+
+# Logs
+*.log
+
+# Dossiers node_modules (si jamais tu utilises npm)
+node_modules/
+
+# Fichiers IDE
+.vscode/
+.idea/
+
+# Fichiers de backup
+*.bak
+*.backup
+
+# Fichiers CSS temporaires (tes nouveaux fichiers vides)
+style-clean.css
+style-new.css
