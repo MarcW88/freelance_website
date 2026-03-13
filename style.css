@@ -3585,3 +3585,14 @@ a:hover {
     margin-top: 1rem;
   }
 }
+
+/* Hero title NL - smaller font size */
+.hero-title--nl {
+  font-size: 2.8rem;
+}
+
+@media (max-width: 768px) {
+  .hero-title--nl {
+    font-size: 2rem;
+  }
+}
