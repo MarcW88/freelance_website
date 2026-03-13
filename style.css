@@ -3548,3 +3548,40 @@ a:hover {
     text-align: center;
   }
 }
+
+/* Language Switcher */
+.lang-switch {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-left: 1rem;
+  padding-left: 1rem;
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.lang-link {
+  font-size: 0.85rem;
+  color: var(--color-gray-medium);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.lang-link:hover,
+.lang-link.active {
+  color: var(--color-text);
+}
+
+.lang-separator {
+  color: var(--color-gray-medium);
+  font-size: 0.85rem;
+}
+
+@media (max-width: 768px) {
+  .lang-switch {
+    margin-left: 0;
+    padding-left: 0;
+    border-left: none;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+}
