@@ -3526,3 +3526,25 @@ a:hover {
     flex-direction: column;
   }
 }
+
+/* Footer Simple */
+.footer-simple {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-simple .footer-social {
+  display: flex;
+  gap: 1rem;
+}
+
+@media (max-width: 600px) {
+  .footer-simple {
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+  }
+}
